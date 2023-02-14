@@ -1,11 +1,12 @@
 import de.bezier.guido.*;
-//Declare and initialize constants NUM_ROWS and NUM_COLS = 20
+int NUM_ROWS = 20;
+int NUM_COLS = 20;
 private MSButton[][] buttons; //2d array of minesweeper buttons
 private ArrayList <MSButton> mines; //ArrayList of just the minesweeper buttons that are mined
 
 void setup ()
 {
-    size(400, 400);
+    size(500, 500);
     textAlign(CENTER,CENTER);
     
     // make the manager
@@ -105,4 +106,27 @@ public class MSButton
     {
         return flagged;
     }
+}
+
+
+
+
+
+int[][] grid  ={{5,8,1,5,0},
+                 {1,3,4,8,5},
+                 {9,5,5,2,3},
+                 {8,6,4,2,0},
+                 {5,9,9,5,3}};
+countFives(grid);
+
+public int countFives(grid[][]){
+  int ans = 0;
+  for(int y = 0; y<grid.length;y++){
+    for(int x =0;x<grid[y].length;x++){
+      if(grid[x][y] == 5){
+        ans++;
+      }
+    }
+  }
+  return ans;
 }
