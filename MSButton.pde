@@ -1,3 +1,4 @@
+import de.bezier.guido.*;
 public class MSButton
 {
   private int myRow, myCol;
