@@ -32,12 +32,12 @@ public class MSButton
     if (mouseButton == RIGHT && clicked == false) {
       if (mines.contains(this) && flagged == false) {
         minesFound++;
-        System.out.println(minesFound+" of "+NUM_MINES);
+        //System.out.println(minesFound+" of "+NUM_MINES);
       }
 
       if (mines.contains(this) && flagged == true) {
         minesFound--;
-        System.out.println(minesFound+" of "+NUM_MINES);
+        //System.out.println(minesFound+" of "+NUM_MINES);
       }
       flagged = !flagged;
     } else if (mouseButton == LEFT && mines.contains(this) && flagged == false) {     
