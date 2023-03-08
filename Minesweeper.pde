@@ -16,7 +16,7 @@ void setup ()
   size(1000, 1000);
   Interactive.make( this ); 
   sButton  = new startButton(width/2-500/2, height/2-200/2, 500, 200);
-  surface.setLocation(5, 0);
+  //surface.setLocation(5, 0);
   textAlign(CENTER, CENTER);
 
   diffSlider = new Slider ( 10, 35, width-20, 20 );
