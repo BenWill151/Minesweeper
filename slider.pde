@@ -1,3 +1,4 @@
+import de.bezier.guido.*;
 public class Slider
 {
   float x, y, width, height;
