@@ -1,3 +1,4 @@
+import de.bezier.guido.*;
 public void displayLosingMessage()
 {
   for (int c = 0; c < mines.size(); c++) {
