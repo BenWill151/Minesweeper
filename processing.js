@@ -796,7 +796,7 @@ module.exports = function finalizeProcessing(Processing, options) {
               return new Processing(canvas, code.join("\n"));
             } catch(e) {
               console.log("Processing.js: Unable to execute pjs sketch.");
-              throw e;
+              //throw e;
             }
           } else {
             throw "Processing.js: Unable to load pjs sketch files: " + errors.join("\n");
